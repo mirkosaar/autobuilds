@@ -6,8 +6,8 @@ services:
 language: bash
 
 before_script:
-    - "docker build -t <Your Docker ID>/autobuilds ."
-    - "docker container run --detach --publish 8080:80 <Your Docker ID>/autobuilds"
+    - "docker build -t mirkosaaromniva1/autobuilds ."
+    - "docker container run --detach --publish 8080:80 mirkosaaromniva1/autobuilds"
     - docker ps
 
 script:
